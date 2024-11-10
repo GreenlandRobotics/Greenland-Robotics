@@ -20,15 +20,22 @@
  *   SOFTWARE.
  */
 
+
+//Package
 package org.firstinspires.ftc.teamcode;
 
+
+//Import opmode
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
+
+//Import navigation tools
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose2D;
 
+//Import utilities
 import java.util.Locale;
 
 /*
@@ -58,7 +65,9 @@ For support, contact tech@gobilda.com
  */
 
 @TeleOp(name="goBILDA® PinPoint Odometry Example", group="Linear OpMode")
+//Uncomment if you don't want it to show up in driver hub
 //@Disabled
+
 
 public class GoBildaPinpointExample extends LinearOpMode {
 
@@ -89,7 +98,7 @@ public class GoBildaPinpointExample extends LinearOpMode {
         Set the kind of pods used by your robot. If you're using goBILDA odometry pods, select either
         the goBILDA_SWINGARM_POD, or the goBILDA_4_BAR_POD.
         If you're using another kind of odometry pod, uncomment setEncoderResolution and input the
-        number of ticks per mm of your odometry pod.
+        number of ticks per mm(or inch, I'm not sure since I changed the units) of your odometry pod.
          */
         odo.setEncoderResolution(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD);
         //odo.setEncoderResolution(13.26291192);
